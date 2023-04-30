@@ -4,29 +4,27 @@ import React from "react";
 export default function App() {
   return (
     <>
-      <View style={{ marginBottom: 24 }}>
-        <Text style={{ fontSize: 24, fontWeight: 700, marginBottom: 32 }}>
-          Inside Out
+      <View>
+        <Text style={{ fontSize: 24, fontWeight: 700, marginBottom: 24 }}>
+          MoMo Gigs
         </Text>
         <Text style={{ fontSize: 18, fontWeight: 600, marginBottom: 16 }}>
-          The Introvert's Guide to Self-Discovery
+          A passive way to earn money from home
         </Text>
-        <Text style={{ fontSize: 16 }}>
-          Descriptive dedication: This name speaks directly to your target
-          audience and highlights the idea of self-discovery. It's clear and
-          straightforward, which could be appealing to introverted readers.
-        </Text>
+        <Text style={{ fontSize: 16 }}>Descriptive text</Text>
       </View>
 
-      <View style={styles.cardContainer}>
+      <View>
         <View style={styles.card}>
           <Image />
-          <Text style={styles.cardHeading}>Part 1</Text>
+          <Text style={{ fontSize: 16, fontWeight: "bold" }}>Part 1</Text>
         </View>
 
         <View style={styles.faqs}>
           <Image />
-          <Text style={styles.faqsHeading}>FAQs</Text>
+          <Text style={{ color: "#fafafa", fontSize: 16, fontWeight: "bold" }}>
+            FAQs
+          </Text>
         </View>
       </View>
     </>
@@ -34,44 +32,21 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  cardContainer: {
-    flex: 1,
-    flexDirection: "row",
-    flexWrap: "wrap",
-  },
-
   card: {
-    width: 140,
-    height: 140,
-    backgroundColor: "#ffbb1c",
-    borderRadius: 12,
-    flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    marginBottom: 16,
-    marginLeft: 16,
-  },
-
-  cardHeading: {
-    fontSize: 16,
-    fontWeight: "bold",
+    width: "100%",
+    height: 100,
+    borderRadius: 12,
+    backgroundColor: "#ffbb1c",
   },
 
   faqs: {
-    width: 295,
-    height: 140,
-    backgroundColor: "#212121",
+    width: "100%",
+    height: 150,
     borderRadius: 12,
-    flex: 1,
+    backgroundColor: "#212121",
     justifyContent: "center",
     alignItems: "center",
-    marginTop: 16,
-    marginLeft: 16,
-  },
-
-  faqsHeading: {
-    color: "#fafafa",
-    fontSize: 16,
-    fontWeight: "bold",
   },
 });
