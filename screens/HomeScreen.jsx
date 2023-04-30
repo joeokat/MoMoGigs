@@ -1,9 +1,9 @@
-import { Text, View, Image, StyleSheet, TouchableOpacity } from "react-native";
+import { Text, View, Image, StyleSheet } from "react-native";
 import React from "react";
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <>
       <View style={{ marginBottom: 24 }}>
         <Text style={{ fontSize: 24, fontWeight: 700, marginBottom: 32 }}>
           Inside Out
@@ -17,52 +17,23 @@ export default function App() {
           straightforward, which could be appealing to introverted readers.
         </Text>
       </View>
-      {/* Cards */}
+
       <View style={styles.cardContainer}>
-        <TouchableOpacity>
-          <View style={styles.card}>
-            <Image />
-            <Text style={styles.cardHeading}>Part 1</Text>
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <View style={styles.card}>
-            <Image />
-            <Text style={styles.cardHeading}>Part 2</Text>
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <View style={styles.card}>
-            <Image />
-            <Text style={styles.cardHeading}>Part 3</Text>
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <View style={styles.card}>
-            <Image />
-            <Text style={styles.cardHeading}>Part 4</Text>
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <View style={styles.faqs}>
-            <Image />
-            <Text style={styles.faqsHeading}>FAQs</Text>
-          </View>
-        </TouchableOpacity>
+        <View style={styles.card}>
+          <Image />
+          <Text style={styles.cardHeading}>Part 1</Text>
+        </View>
+
+        <View style={styles.faqs}>
+          <Image />
+          <Text style={styles.faqsHeading}>FAQs</Text>
+        </View>
       </View>
-    </View>
+    </>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    paddingHorizontal: 16,
-  },
-
   cardContainer: {
     flex: 1,
     flexDirection: "row",
