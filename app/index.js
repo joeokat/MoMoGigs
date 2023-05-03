@@ -5,7 +5,7 @@ export default function Page() {
     <View style={styles.container}>
       <View style={styles.main}>
         <Text style={styles.title}>MoMo Freelance Gigs</Text>
-        <Text style={styles.subtitle}>A passive way to earn locally.</Text>
+        <Text style={styles.subtitle}>A Passive Way To Earn.</Text>
       </View>
     </View>
   );
