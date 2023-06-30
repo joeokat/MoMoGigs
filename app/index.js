@@ -4,8 +4,8 @@ export default function Page() {
   return (
     <View style={styles.container}>
       <View style={styles.main}>
-        <Text style={styles.title}>MoMo Freelance Gigs</Text>
-        <Text style={styles.subtitle}>A Passive Way To Earn.</Text>
+        <Text style={styles.title}>Influencer</Text>
+        <Text style={styles.subtitle}>Grow To Earn.</Text>
       </View>
     </View>
   );
