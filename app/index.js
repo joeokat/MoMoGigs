@@ -4,8 +4,8 @@ export default function Page() {
   return (
     <View style={styles.container}>
       <View style={styles.main}>
-        <Text style={styles.title}>Influencer</Text>
-        <Text style={styles.subtitle}>Grow To Earn.</Text>
+        <Text style={styles.title}>Valkyrie</Text>
+        <Text style={styles.subtitle}>Fashion</Text>
       </View>
     </View>
   );
